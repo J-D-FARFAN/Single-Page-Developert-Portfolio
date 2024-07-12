@@ -1,0 +1,83 @@
+@media screen and (max-width: 768px){
+    body{
+        .JumpLine768{
+            display: block;
+        }
+        .contain__all{
+            width: 100%;
+            .content-headerPage{
+                width: 100%;
+                padding: 1.5rem;
+            }
+            .content--heroPage{
+                width: 100%;
+                padding: 1.5rem;
+                .introductionPage{
+                    width: 545px;
+                    .title{
+                        font-size: 72px;
+                    }
+                }
+                .content-imagePerson{
+                    width: 322px;
+                    height: 600px;
+                    background: url(../assets/images/image-profile-tablet.webp) center no-repeat; 
+                    background-size: cover;
+
+                    &::before{
+                        bottom: 0;
+                        left: 80%;
+                    }
+                }
+            }
+
+            .bx-skills{
+                width: 100%;
+                padding: 0 1.5rem;
+
+                grid-template-areas: "column-1 column-2"
+                                     "column-3 column-4"
+                                     "column-5 column-6";
+            }
+
+            .content--projects{
+                width: 100%;
+                padding: 1.5rem;
+
+                .Tprojects{font-size: 72px;}
+
+                .bxs--projects{
+                    .projects{
+                        .bx-imageProject{
+                            height: 253px;
+                            .bx-btn--actions{display: none;}
+                        }
+                        .bx-btn--actions{display: flex;}
+                    }
+                }
+            }
+
+            .contain-footer{
+                &::before{
+                    bottom: 18%;
+                    left: -50%;
+                }
+
+                .bx-contain--form{
+                    width: 100%;
+                    padding: 3rem 1.5rem;
+                    height: 100%;
+
+                    .bx-form{
+                        text-align: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 2rem;
+                        padding-bottom: 6rem;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

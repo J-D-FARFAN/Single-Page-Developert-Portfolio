@@ -1,0 +1,144 @@
+@import url(main.css);
+
+@media screen and (min-width: 335px) and (max-width: 400px){
+    body{
+        .txt{font-size: 16px !important;}
+        .contain__all{
+            .content-headerPage{
+                height: fit-content;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .content--heroPage{
+                align-items: center;
+                text-align: center;
+                margin-top: 4rem;
+
+                &::before{
+                    left: -95%;
+                    top: 99px;
+                    z-index: -1;
+                }
+                .introductionPage{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 2rem;
+                    .title{
+                        width: 100%;
+                        font-size: 38px;
+                        .styleName{
+                            &::before{
+                                bottom: 0px;
+                            }
+                        }
+                    }
+                    .txt{
+                        width: 100%;
+                        font-size: 16px;
+                    }
+                }
+
+                .content-imagePerson{
+                    position: relative;
+                    width: 174.21px;
+                    height: 383px;
+                    background: url(../assets/images/image-profile-mobile.webp) center no-repeat;
+                    background-size: cover;
+                    margin-bottom: 2rem;
+
+                    &::before{
+                        left: 120%;
+                        bottom: 0;
+                    }
+                }
+            }
+
+            .bx-skills{
+                border-bottom: 2px solid var(--colorGrayTxt);
+                padding-bottom: 4rem;
+                text-align: center;
+                gap: 1.5rem;
+                grid-template-areas: "column-1"
+                                     "column-2"
+                                     "column-3"
+                                     "column-4"
+                                     "column-5"
+                                     "column-6";
+                .skills{
+                    .nameSkill{font-size: 32px;}
+                    .experience{font-size: 16px;}
+                }
+
+                &::before{
+                    bottom: -10%;
+                    right: -90%;
+                }
+            }
+
+            .content--projects{
+                width: 100%;
+                height: fit-content;
+                margin-bottom: 3rem;
+                .contentIntroduction-projects{
+                    height: fit-content;
+                    margin: 0;
+                    margin-bottom: 2rem;
+                    .Tprojects{font-size: 38px;}
+                }
+
+                .bxs--projects{
+                    grid-template-columns: 1fr;
+                    grid-template-areas: "columnP-1"
+                                         "columnP-2"
+                                         "columnP-3"
+                                         "columnP-4"
+                                         "columnP-5"
+                                         "columnP-6";
+                }
+            }
+
+
+            .contain-footer{
+                &::before{
+                    bottom: 29%;
+                    left: -90%;
+                }
+
+                .bx-contain--form{
+                    width: 100%;
+                    padding: 3rem 1.5rem;
+                    height: 100%;
+
+                    .bx-form{
+                        width: 100%;
+                        text-align: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 2rem;
+                        padding-bottom: 6rem;
+                        height: 100%;
+
+                        .bx-contact{
+                            width: 100%;
+                            .contact{font-size: 38px;}
+                        }
+
+                        .contentForm-contact{width: 100%;}
+                    }
+
+                    .footerPage{
+                        text-align: center;
+                        height: fit-content;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 1.5rem;
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

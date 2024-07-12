@@ -1,0 +1,92 @@
+@import url(styles.css);
+@import url(media768.css);
+@import url(media375.css);
+
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+
+:root{
+    --bgColor: #151515;
+    --colorIdle: #4ee1a0;
+    --bgColorFooter: #242424;
+    --colorGrayTxt: #d9d9d9;  
+    --colorNTxt: #ffffff;
+    --txtSize: 18px; /*Body*/
+
+    --fontZ: SpaceGrotesk;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontZ);
+}
+
+.JumpLine768{
+    display: none;
+}
+
+
+.txt{
+    color: var(--colorGrayTxt);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.name{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--colorNTxt);
+}
+
+.listSocial{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    .iconSocial{
+        cursor: pointer;
+        fill: var(--colorNTxt);
+        &:hover{
+            fill: var(--colorIdle);
+        }
+    }
+}
+
+.stylesGeneralBtn{
+    width: fit-content;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--colorIdle);
+    outline: none;
+    color: var(--colorNTxt);
+    text-transform: uppercase;
+    letter-spacing: 2.29px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease;
+    text-decoration: none;
+
+    &:hover{color: var(--colorIdle);}
+}
+
+.activeErrorForm{border-color: tomato !important;}
+.activeSucessForm{border-color: var(--colorIdle) !important;}
+
+.messageError{
+    display: none;
+    position: absolute;
+    right: 0;
+    color: tomato;
+    font-size: 14px;
+    margin-top: 1rem;
+    text-align: right;
+}
